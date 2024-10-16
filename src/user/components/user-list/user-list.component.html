@@ -1,0 +1,11 @@
+<p>user-list works!</p>
+<button (click)="onClick()">Set maxAge to 100</button>
+
+<input type="number" [(ngModel)]="maxAge">
+
+<div>
+  User age: {{ userAge}}<br />
+  Max age: {{ maxAge }}
+</div>
+
+<div appHighlight [age]="userAge" [maxAge]="maxAge">AGE</div>
